@@ -1,5 +1,6 @@
 import * as d3 from "d3";
-//import { PriorityQueue } from './priority-queue.js';
+
+import { LanguageUtil } from './LanguageUtil.js';
 
 export class TerrainViewController {
 
@@ -561,7 +562,9 @@ export class TerrainViewController {
             if (n > render.cities.length) n = render.cities.length;
             var flux = getFlux(h);
             var terr = [];
+            
             var queue = new PriorityQueue({comparator: function (a, b) {return a.score - b.score}});
+            
             function weight(u, v) {
                 var horiz = distance(h.mesh, u, v);
                 var vert = h[v] - h[u];
@@ -867,7 +870,11 @@ export class TerrainViewController {
             var cities = render.cities;
             var nterrs = render.params.nterrs;
             var avoids = [render.rivers, render.coasts, render.borders];
-            var lang = makeRandomLanguage();
+
+            var langUtil = new LanguageUtil();
+            
+            var lang = langUtil.makeRandomLanguage();
+
             var citylabels = [];
             function penalty(label) {
                 var pen = 0;
@@ -906,7 +913,7 @@ export class TerrainViewController {
             for (var i = 0; i < cities.length; i++) {
                 var x = h.mesh.vxs[cities[i]][0];
                 var y = h.mesh.vxs[cities[i]][1];
-                var text = makeName(lang, 'city');
+                var text = langUtil.makeName(lang, 'city');
                 var size = i < nterrs ? params.fontsizes.city : params.fontsizes.town;
                 var sx = 0.65 * size/1000 * text.length;
                 var sy = size/1000;

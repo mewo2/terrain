@@ -1,3 +1,37 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/YZaO6llzOP57DpTBv2GnyFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v11/WmVKXVcOuffP_qmCpFuyzQsYbbCjybiHxArTLjt7FRU.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v11/JbtMzqLaYbbbCL9X6EvaIwzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
 .App {
   text-align: center;
 }
@@ -22,3 +56,140 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+body {
+    font-family: Raleway, sans-serif;
+    background-color: #eee;
+}
+
+div.splash {
+    text-align: center;
+}
+
+div.project, div.note {
+    padding: 1em;
+    margin: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    clear: both;
+    overflow: auto;
+    background-color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
+h3 {
+    font-size: 1.5rem;
+}
+p.medium {
+    font-size: 1rem;
+    font-style: italic;
+}
+div.example-tweets, div.example-images {
+    float: right;
+    width: 256px;
+    margin-left: 1em;
+}
+
+div.example {
+    margin: 0.5em;
+    padding: 1em;
+    background-color: #eee;
+    clear: both;
+    overflow: auto;
+}
+
+div.controlset {
+    overflow: auto;
+}
+div.control {
+    padding: 0.5em;
+    float: left;
+}
+
+div.output {
+    padding: 0.5em;
+    clear: both;
+}
+
+div#footer {
+    clear: both;
+    font-size: small;
+    text-align: center;
+}
+
+button {
+    font-size: large;
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+select {
+    background-color: white;
+    border: solid 1px black;
+    font-size: medium;
+    margin-left: 0.5rem;
+}
+
+path, line {
+    fill: none;
+    stroke: black;
+    stroke-linecap: round;
+}
+
+.field {
+    stroke: none;
+    fill-opacity: 1.0;
+}
+
+.slope {
+    stroke-width: 1;
+}
+
+.river {
+    stroke-width: 2;
+}
+
+.coast {
+    stroke-width: 4;
+}
+
+.border {
+    stroke-width: 5;
+    stroke-dasharray: 4,4;
+    stroke-linecap: butt;
+}
+
+text {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: black;
+    stroke: white;
+    stroke-width: 5;
+    stroke-linejoin: round;
+    paint-order: stroke;
+}
+
+text.region {
+    stroke-width:10;
+    font-variant: small-caps;
+}
+
+svg {
+    float: right;
+    background-color: white;
+}
+
