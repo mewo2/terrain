@@ -62,6 +62,19 @@ body {
     background-color: #eee;
 }
 
+a {
+  color: darkturquoise;
+  text-decoration: none;
+}
+
+a:visited{
+ color: darkturquoise;
+}
+
+p {
+  color: #CCC;
+}
+
 div.splash {
     text-align: center;
 }

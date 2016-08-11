@@ -52,7 +52,8 @@ class App extends Component {
     return (
       <div className="App">
         <div style={styles.header} className="App-header">
-          <h2>Generate Fantasy Maps with React & D3</h2>
+          <h2>Generate Fantasy Maps with React and D3</h2>
+          <p>Learn more about contributing to this <a href="https://github.com/mewo2/terrain" target="_blank">fantasy terrain project on github</a></p>
         </div>
         <div style={styles.terrain} ref="terrain" id="terrainContainer"></div>
       </div>

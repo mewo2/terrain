@@ -2,7 +2,7 @@
 
 ## About
 
-so what gives?!
+so what gives?! write stuff here when things have settled...
 
 ## STEPS
 
