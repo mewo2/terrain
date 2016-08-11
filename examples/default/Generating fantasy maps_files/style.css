@@ -1,0 +1,87 @@
+body {
+    font-family: Raleway, sans-serif;
+    background-color: #eee;
+}
+
+div.splash {
+    text-align: center;
+}
+
+div.project, div.note {
+    padding: 1em;
+    margin: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    clear: both;
+    overflow: auto;
+    background-color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
+h3 {
+    font-size: 1.5rem;
+}
+p.medium {
+    font-size: 1rem;
+    font-style: italic;
+}
+div.example-tweets, div.example-images {
+    float: right;
+    width: 256px;
+    margin-left: 1em;
+}
+
+div.example {
+    margin: 0.5em;
+    padding: 1em;
+    background-color: #eee;
+    clear: both;
+    overflow: auto;
+}
+
+div.controlset {
+    overflow: auto;
+}
+div.control {
+    padding: 0.5em;
+    float: left;
+}
+
+div.output {
+    padding: 0.5em;
+    clear: both;
+}
+
+div#footer {
+    clear: both;
+    font-size: small;
+    text-align: center;
+}
+
+button {
+    font-size: large;
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+select {
+    background-color: white;
+    border: solid 1px black;
+    font-size: medium;
+    margin-left: 0.5rem;
+}
