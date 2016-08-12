@@ -6,21 +6,14 @@ After discovering this awesome repo from the blog post, I wanted to play around 
 
 In this demo, I'm leveraging Facebook's [create react app](https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html) tool to quickly get a React app up and running that uses the lastest es6 features. Then, I've added the latest version of D3. 
 
-
 ## Dev Steps
-
-1. 
-
+ 
 npm install
-
-2. 
-
+ 
 npm start 
 
 ## Production Step
-
-1. 
-
+ 
 npm run build
 
 
