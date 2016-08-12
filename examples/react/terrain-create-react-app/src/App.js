@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import * as d3 from "d3";
 
-import { TerrainViewController } from './TerrainViewController.js';
+import Header from './containers/header/Header';
+import Tools from './containers/tools/Tools';
+import Terrain from './components/terrain/Terrain';
 
 import logo from './logo.svg';
 import './App.css';
@@ -18,44 +20,16 @@ class App extends Component {
     }
   }
 
-  drawTerrain( id ){
-
-    let svg = d3.select("#terrainContainer").append("svg")
-                                                .attr("width", "100%")
-                                                .attr("height", "100%");
-
-
-    let terrain = new TerrainViewController();        
-    let defaultParams = terrain.getDefaultParams(); 
-    terrain.doMap( svg, defaultParams)
-    
-
-  }
-
   componentDidMount(){
-     this.drawTerrain(); 
+     
   }
   
   render() {
-
-    let styles = {
-      terrain: {
-        width: "800px",
-        height: "800px",
-        margin: "0 auto"
-      },
-      header: {
-        height: "60px",
-      }     
-    }
-
     return (
       <div className="App">
-        <div style={styles.header} className="App-header">
-          <h2>Generate Fantasy Maps with React and D3</h2>
-          <p>Learn more about contributing to this <a href="https://github.com/mewo2/terrain" target="_blank">fantasy terrain project on github</a></p>
-        </div>
-        <div style={styles.terrain} ref="terrain" id="terrainContainer"></div>
+        <Header/>
+        <Tools/>
+        <Terrain/>
       </div>
     );
   }

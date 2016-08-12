@@ -143,6 +143,14 @@ button {
     border: 1px solid black;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+button.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
 }
 
 button:hover {
@@ -185,6 +193,18 @@ path, line {
     stroke-width: 5;
     stroke-dasharray: 4,4;
     stroke-linecap: butt;
+}
+
+.toolsContainer {
+  border: 1px dotted #ccc;
+  margin: 0 auto;
+  width: 800px;
+}
+
+p.cominsoon {
+  display: inline-block;
+  width: auto;
+  margin-right: 20px;
 }
 
 text {

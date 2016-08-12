@@ -6,6 +6,8 @@ export class TerrainViewController {
 
     constructor(){
 
+        let langUtil = new LanguageUtil();
+
         function runif(lo, hi) {
             return lo + Math.random() * (hi - lo);
         }
@@ -977,7 +979,7 @@ export class TerrainViewController {
             var reglabels = [];
             for (var i = 0; i < nterrs; i++) {
                 var city = cities[i];
-                var text = makeName(lang, 'region');
+                var text = langUtil.makeName(lang, 'region');
                 var sy = params.fontsizes.region / 1000;
                 var sx = 0.6 * text.length * sy;
                 var lc = terrCenter(h, terr, city, true);
