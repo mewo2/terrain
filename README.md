@@ -8,7 +8,7 @@ This code depends on the following:
 
  * [D3.js][d3] (tested with version 4.2.0)
  * Adam Hooper's [js-priority-queue][priority]
- * My [language generation code][langauge]
+ * My [language generation code][language]
 
 ## Disclaimer
 
